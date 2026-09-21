@@ -5994,32 +5994,6 @@
     }
     );
     i(78);
-    n.a.fn.trackLead = I()((function(t) {
-        t.on("submit:success", () => {
-            "function" == typeof fbq && fbq("track", "Lead");
-            const t = window.location.href
-              , e = [{
-                event_name: "Lead",
-                event_time: Math.floor((new Date).getTime() / 1e3),
-                event_source_url: t,
-                opt_out: !0
-            }];
-            n.a.ajax({
-                url: "https://graph.facebook.com/v13.0/306666490669684/events",
-                type: "POST",
-                headers: {
-                    access_token: "EAAHjRg1dSioBAF41Sj7VYC31uTXXaTAC3YMB5ymX4yL44UHZAGTFFJraUGhNxoXPpYWiplMxaJM0gqVavTGlup3Yslv1jBgncTAtr0NouTnjiM28amnVa8DRiou29lCqNRqt2pdgSP9j2ggY8jxIvLWM83Lqe1ribUQol9ZC1b1zmiUWvIZC90AXH22StUZD",
-                    "Content-Type": "application/json; charset=utf-8"
-                },
-                data: JSON.stringify({
-                    data: e
-                }),
-                dataType: "json"
-            })
-        }
-        )
-    }
-    ));
     i(153);
     var nt = i(11)
       , st = i(9)
